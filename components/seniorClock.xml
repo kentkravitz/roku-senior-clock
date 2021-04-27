@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="SeniorClock" extends="Scene">
+  <script type="text/brightscript" uri="SeniorClock.brs" />
+    <children>
+      <Label id="myDayName" 
+        width="1280" 
+        height="720" 
+        horizAlign="center"
+        vertAlign="top"
+        font="font:LargeBoldSystemFont"
+        translation="[0,30]"
+      />
+      <Label id="myTimeDescription" 
+        width="1280" 
+        height="720" 
+        horizAlign="center"
+        vertAlign="top"
+        font="font:LargeBoldSystemFont"
+        translation="[0,164]"
+      />
+      <Label id="myTime" 
+        width="1280" 
+        height="720" 
+        horizAlign="center"
+        vertAlign="center"
+        font="font:LargeBoldSystemFont"
+        translation="[0,64]"
+      />
+      <Label id="myMonth" 
+        width="1280" 
+        height="720" 
+        horizAlign="left"
+        vertAlign="bottom"
+        font="font:LargeBoldSystemFont"
+        translation="[30,-30]"
+      />
+      <Label id="myDay" 
+        width="1280" 
+        height="720" 
+        horizAlign="center"
+        vertAlign="bottom"
+        font="font:LargeBoldSystemFont"
+        translation="[0,-30]"
+      />
+      <Label id="myYear" 
+        width="1280" 
+        height="720" 
+        horizAlign="right"
+        vertAlign="bottom"
+        font="font:LargeBoldSystemFont"
+        translation="[-30,-30]"
+      />
+      <Timer
+        id="updateTimer"
+        repeat="true"
+        duration="5"
+      />
+    </children>
+</component>
